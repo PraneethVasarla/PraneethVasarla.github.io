@@ -80,15 +80,30 @@ modalCloses.forEach((modalClose) => {
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiperPoetfolio = new Swiper(".portfolio__container", {
-    cssMode: true,
+    //cssMode: true,
     loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    grabCursor: true,
+    spaceBetween: 100,
+
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+      dynamicBullets: true,
+    },
+    breakpoints:{
+        568:{
+            slidesPerView: 1,
+        }
+    },
+
+    breakpoints:{
+        1024:{
+            slidesPerView: 1,
+        }
     },
     mousewheel: true,
     keyboard: true,

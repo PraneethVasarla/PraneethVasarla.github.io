@@ -656,7 +656,7 @@ img {
 }
 /*==================== PORTFOLIO ====================*/
 .portfolio__container {
-  overflow: initial;
+  overflow: hidden;
 }
 
 .portfolio__content {
@@ -680,6 +680,10 @@ img {
 
 .portfolio__button:hover .button__icon {
   transform: translateX(0.25rem);
+}
+
+.swiper-pagination-bullets-dynamic{
+  margin: 3% 0% 0% 22.5%;
 }
 
 .swiper-button-prev::after,
@@ -707,6 +711,9 @@ img {
 /*==================== PROJECT IN MIND ====================*/
 
 /*==================== TESTIMONIAL ====================*/
+.testimonial__container{
+  overflow: hidden;
+}
 .testimonal__data,
 .testimonial__header {
   display: flex;
