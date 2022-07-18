@@ -25,7 +25,7 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Praneth</a>
+            <a href="#" class="nav__logo">Praneeth Vasarla</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
@@ -225,7 +225,7 @@
                                     <span class="skills__percentage skills__machinelearning "></span>
                                 </div>
                             </div>
-                            
+
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Deep Learning</h3>
@@ -665,32 +665,32 @@
                     </div>
                 </div>
 
-                <form action="mailto:praneethvaasarla@gmail.com" class="contact__form grid" method="post"
-                    enctype="text/plain">
+                <form class="contact__form grid" action="https://formspree.io/f/mpzbvwjz"
+                method="POST">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
+                            <label for="visitor_name" class="contact__label">Name</label>
+                            <input type="text" id = 'visitor_name' class="contact__input" name="VistorName">
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Email</label>
-                            <input type="email" class="contact__input">
+                            <label for="visitor_email" class="contact__label">Email</label>
+                            <input type="email" class="contact__input" id="visitor_email" name="VisitorEmail">
                         </div>
                     </div>
                     <div class="contact__content">
-                        <label for="" class="contact__label">Project</label>
-                        <input type="text" class="contact__input">
+                        <label for="visitor_project" class="contact__label">Project</label>
+                        <input id = "visitor_project" type="text" class="contact__input" name="Project">
                     </div>
                     <div class="contact__content">
-                        <label for="" class="contact__label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <label for="visitor_message" class="contact__label">Message</label>
+                        <textarea name="" id="visitor_message" cols="0" rows="7" class="contact__input" name="Message"></textarea>
                     </div>
 
                     <div>
-                        <a href="" class="button button--flex">
+                        <button class="button button--flex" type="submit">
                             Send Message
                             <i class="uil uil-message button__icon"></i>
-                        </a>
+                        </button>
                     </div>
 
                 </form>
@@ -735,7 +735,7 @@
             </div>
 
 
-            <p class="footer__copy">&#169, Praneeth. All Rights Reserved</p>
+            <p class="footer__copy">&#169 Praneeth. All Rights Reserved</p>
         </div>
 
 
@@ -752,6 +752,7 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
